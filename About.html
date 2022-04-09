@@ -14,6 +14,10 @@
             padding:0;
             box-sizing: border-box;
         }
+        #info{
+            display:flex;
+            justify-content:center;
+        }
         #matter img{
             padding:10px 0;
         }
@@ -40,9 +44,12 @@
         }
 
         @media (max-width:800px){
+            #info{display:block;}
             #matter{width:100%;}
             #links{width:100%;}
         }
+        
+        
         
     </style>
 </head>
@@ -78,7 +85,7 @@
     </section>
     
     <div id="content">
-       <div class="container d-flex">
+       <div class="container" id="info">
            <div id="matter">
                <h2 class="mt-2">About us</h2>
                <h4 style="margin-top:12px;">It happens millions of times each week – a customer receives a drink from a<br> Starbucks barista – but each interaction is unique.</h4>
